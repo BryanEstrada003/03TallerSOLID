@@ -1,14 +1,28 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ec.edu.espol.solid;
 
-/**
- *
- * @author sam sung
- */
 public class S {
+    
+    class ArtículoRevista {
+
+    private String nombreArtículo;
+    private String nombreRevista;
+    private String seccionRevista;
+    private String[] autores;
+    private String[] fuentes;
+    
+    // constructores, getters y setters
+
+    }
+   
+    class SoftwareDeEdicion {
+        
+        void agregarImagen(){ }
+        
+        void eliminarImagen(){ }
+        
+        void editarTexto(){ }
+        
+        void editarFondo(){ }
+    }
     
 }
