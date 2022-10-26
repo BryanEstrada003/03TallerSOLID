@@ -11,12 +11,14 @@ public class L {
     
     class CocinaGas implements Cocina {
         boolean gasAbierto;
-                
+        boolean hornillaEncendida;
+        
         void hacerChispa(){ }
         
         public void encenderHornilla(){
             if (!gasAbierto) gasAbierto=true;
-            hacerChispa();     
+            while (!hornillaEncendida)
+                hacerChispa();     
         }
         
         public void apagarHornilla(){
@@ -39,6 +41,7 @@ public class L {
             seleccionarYapagarHornilla();
         }
         
-    }
+    } // Sin importar la clase de cocina, a gas o eléctrica, 
+      // la cocina encenderá la hornilla y la apagará si se necesita.
     
 }
