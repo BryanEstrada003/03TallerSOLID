@@ -1,14 +1,44 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ec.edu.espol.solid;
 
-/**
- *
- * @author sam sung
- */
 public class L {
+    
+    interface Cocina {
+        
+        void encenderHornilla();
+        void apagarHornilla();
+    }
+    
+    class CocinaGas implements Cocina {
+        boolean gasAbierto;
+                
+        void hacerChispa(){ }
+        
+        public void encenderHornilla(){
+            if (!gasAbierto) gasAbierto=true;
+            hacerChispa();     
+        }
+        
+        public void apagarHornilla(){
+            gasAbierto=false;
+        }
+    }
+    
+    class CocinaElectrica implements Cocina {
+        boolean encendido;
+        
+        void seleccionarYencenderHornilla(){}
+        void seleccionarYapagarHornilla(){}
+        
+        public void encenderHornilla(){
+            if (!encendido) encendido=true;
+            seleccionarYencenderHornilla();
+        }
+        
+        public void apagarHornilla(){
+            seleccionarYapagarHornilla();
+        }
+        
+    }
     
 }
