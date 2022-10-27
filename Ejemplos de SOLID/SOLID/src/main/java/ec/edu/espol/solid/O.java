@@ -11,24 +11,26 @@ package ec.edu.espol.solid;
  */
 public class O {
 
-    interface fun {
+    interface enjoyable {
 
-        void enjoy();
+        void fun();
     }
 
-    class Ride implements fun {
+    class Ride implements enjoyable {
 
         @Override
-        public void enjoy() {
+        public void fun() {
             System.out.println("I love car rides!");
         }
     }
 
-    class Walk implements fun {
+    class Walk implements enjoyable {
 
         @Override
-        public void enjoy() {
+        public void fun() {
             System.out.println("Walking is my favorite hobby!");
         }
     }
+    //Se puede seguir añadiendo más clases que implementen la misma interfaz,
+    //pero queda cerrado a modificaciones posteriores tanto a cada clase como a la interfaz.
 }
