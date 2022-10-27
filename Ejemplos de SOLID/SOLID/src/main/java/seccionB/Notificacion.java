@@ -18,5 +18,6 @@ public class Notificacion {
        }else{
            //enviarSMS();
        }
+       //open - closed principle
    }
 }

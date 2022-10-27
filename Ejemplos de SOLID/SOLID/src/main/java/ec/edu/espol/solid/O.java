@@ -10,5 +10,25 @@ package ec.edu.espol.solid;
  * @author sam sung
  */
 public class O {
-    
+
+    interface fun {
+
+        void enjoy();
+    }
+
+    class Ride implements fun {
+
+        @Override
+        public void enjoy() {
+            System.out.println("I love car rides!");
+        }
+    }
+
+    class Walk implements fun {
+
+        @Override
+        public void enjoy() {
+            System.out.println("Walking is my favorite hobby!");
+        }
+    }
 }

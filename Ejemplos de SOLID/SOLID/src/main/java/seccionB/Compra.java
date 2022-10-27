@@ -16,6 +16,7 @@ public class Compra {
     private PagoPayPal pagoPayPal;
     private List articulos;
     
+    //D - dependecy inversion principle
     public Compra(Pago pago){
         //constructor
     }
