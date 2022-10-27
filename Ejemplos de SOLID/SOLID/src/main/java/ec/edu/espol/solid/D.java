@@ -1,7 +1,4 @@
-
 package ec.edu.espol.solid;
-
-
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,24 +6,20 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-/**
- *
- * @author sam sung
- */
 public class D {
     
     public interface CustomerDao {
-
+        
         Optional<Customer> findById(int id);
-
+        
         List<Customer> findAll();
-
+        
     }
     
     public class Customer {
-
+        
         private final String name;
-
+        
         public Customer(String name) {
             this.name = name;
         }
@@ -44,7 +37,7 @@ public class D {
     
     
     public class SimpleCustomerDao implements CustomerDao {
-
+        
         private Map<Integer, Customer> customers = new HashMap<>();
 
         public SimpleCustomerDao(Map<Integer, Customer> customers) {

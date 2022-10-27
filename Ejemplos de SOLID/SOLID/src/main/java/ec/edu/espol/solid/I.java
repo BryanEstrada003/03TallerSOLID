@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ec.edu.espol.solid;
 
 /**
@@ -11,7 +6,8 @@ package ec.edu.espol.solid;
  */
 public class I {
     
-// se realiza un sistema educativo donde al iniciar sesion se muestra la informacion de los usuarios
+// se realiza un sistema educativo donde al iniciar sesion se muestra 
+    //la informacion de los usuarios
     
     /**
      * CODIGO QUE VIOLA EL PRINCIPIO
@@ -59,3 +55,6 @@ public class I {
         //...
     };
 }
+
+
+

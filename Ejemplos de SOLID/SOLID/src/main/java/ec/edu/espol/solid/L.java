@@ -1,10 +1,7 @@
-
 package ec.edu.espol.solid;
-
 public class L {
     
     interface Cocina {
-        
         void encenderHornilla();
         void apagarHornilla();
     }
@@ -41,7 +38,15 @@ public class L {
             seleccionarYapagarHornilla();
         }
         
-    } // Sin importar la clase de cocina, a gas o eléctrica, 
-      // la cocina encenderá la hornilla y la apagará si se necesita.
+    } // Sin importar la clase de cocina, a 
+    //gas o eléctrica, 
+      // la cocina encenderá la hornilla y 
+    //la apagará si se necesita.
     
 }
+
+
+
+
+
+

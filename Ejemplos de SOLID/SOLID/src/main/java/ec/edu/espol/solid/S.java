@@ -37,7 +37,8 @@ public class S {
 
     }
    
-    class SoftwareDeEdicion { //Se crea una clase que SOLO se encargue de la edición del articulo
+    class SoftwareDeEdicion { //Se crea una clase que SOLO se encargue de 
+        //la edición del articulo
         
         void agregarImagen(){ }
         void eliminarImagen(){ }
