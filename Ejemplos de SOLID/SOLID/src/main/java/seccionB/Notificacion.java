@@ -12,7 +12,7 @@ package seccionB;
 public class Notificacion {
    private int tipoNotificacion;
    
-   public void notificar(Pago pago){
+   public void notificar(Pagar pago){
        if(tipoNotificacion==1){
            //enviarEmail
        }else{
