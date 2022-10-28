@@ -2,15 +2,19 @@
 package seccionB;
 
 
-public class Notificacion {
-   private int tipoNotificacion;
-   
+
+public interface Notificacion{
+    public void notificar(Pagar pago);
+}
+
+class NotiEmail implements Notificacion{
    public void notificar(Pagar pago){
-       if(tipoNotificacion==1){
-           //enviarEmail
-       }else{
-           //enviarSMS();
-       }
-       //open - closed principle
+       //enviaremail
    }
+}
+
+class NotiSMS implements Notificacion{
+    public void notificar (Pagar pago){
+        //enviarSMS
+    }
 }
